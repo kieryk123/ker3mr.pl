@@ -1,0 +1,50 @@
+.btn-with-arrow {
+	display: inline-block;
+	position: relative;
+	padding: 18px 25px;
+	padding-right: 80px;
+	border-radius: 0;
+	border: 1px solid #d2d2d2;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	color: black;
+	background-color: white;
+	transition: 0.2s all ease-in-out;
+	&:hover {
+		color: black;
+		text-decoration: none;
+		&:after {
+			-webkit-animation: rotate-center 0.3s ease-in-out both;
+							animation: rotate-center 0.3s ease-in-out both;
+		}
+	}
+	&:focus {
+		box-shadow: none;
+		color: black;
+		text-decoration: none;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		border-left: 1px solid #d2d2d2;
+    width: 1px;
+    height: 58px;
+    top: 0;
+    right: 56px;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		background-image: url('../images/button-arrow.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 18px;
+    width: 25px;
+    right: 15px;
+    top: 19px;
+	}
+}

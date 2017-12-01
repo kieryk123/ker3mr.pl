@@ -1,0 +1,207 @@
+.front-page {
+	// sekcja offer
+	.offer {
+		border-top: 3px solid white;
+		.box {
+			position: relative;
+			min-height: 315px;
+			padding: 60px;
+			border-right: 1px solid #bebebe;
+			border-bottom: 2px solid white;
+			.box-hover {
+				position: absolute;
+				top: -60px;
+				left: 0;
+				z-index: 15;
+				visibility: hidden;
+			  opacity: 0;
+			  transition: visibility 0s ease-in-out 0.2s, opacity 0.2s ease-in-out;
+		    padding: 60px 60px;
+		    background-color: #252525;
+		    width: 100%;
+				@media only screen and (max-width : 768px) {
+					top: -20px;
+				}
+				.number {
+					color: white;
+					border-color: white;
+				}
+				.title {
+					color: white;
+					.special {
+						color: white;
+					}
+				}
+				.text {
+					font-size: 15px;
+					margin-top: 28px;
+					margin-bottom: 35px;
+					color: white;
+				}
+			}
+			&:first-child {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			&:nth-child(3), &:nth-child(7) {
+				border-right: 0;
+			}
+			@media only screen and (max-width : 992px) {
+				border-bottom: 1px solid #bebebe;
+				&:nth-child(3), &:nth-child(7) {
+					border-right: 1px solid #bebebe;
+				}
+				&:nth-child(2), &:nth-child(5), &:nth-child(7) {
+					border-right: 0;
+				}
+    	}
+			@media only screen and (max-width : 768px) {
+				border-right: 0;
+				&:nth-child(3), &:nth-child(7) {
+					border-right: 0;
+				}
+    	}
+			.number {
+				display: inline-block;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #ff4540;
+				font-size: 14px;
+				color: #828282;
+			}
+			.title {
+				margin-top: 15px;
+				color: #424242;
+				font-family: 'Raleway', sans-serif;
+				font-size: 26px;
+				font-weight: bold;
+				.special {
+					font-size: 20px;
+					font-weight: 400;
+				}
+			}
+			.icon {
+				margin-top: 28px;
+			}
+		}
+		.box:hover {
+			.box-hover {
+				visibility: visible;
+			  opacity: 1;
+			  transition-delay: 0s;
+			}
+		}
+		.divider {
+			min-height: 1px;
+			border-top: 1px solid #bebebe;
+			border-bottom: 2px solid white;
+		}
+	}
+	// sekcja about us
+	.about-us {
+		padding-top: 95px;
+		padding-bottom: 95px;
+		p:last-of-type {
+			margin-bottom: 60px;
+		}
+		.section-divider-bottom {
+			margin-top: 90px;
+		}
+	}
+	// sekcja parallax
+	.parallax {
+		background: transparent;
+		padding-top: 215px;
+		padding-bottom: 215px;
+		color: white;
+		.parallax-title {
+			font-family: 'Raleway', sans-serif;
+			font-size: 36px;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 50px;
+			@media only screen and (max-width : 480px) {
+				font-size: 28px;
+			}
+		}
+		p {
+			margin-bottom: 55px;
+		}
+	}
+	// sekcja our works
+	.our-works {
+		padding-top: 95px;
+		padding-bottom: 95px;
+		#content-slider {
+			.work {
+				position: absolute;
+				padding: 0;
+				background-position: center;
+				background-size: cover;
+				border: 1px solid white;
+				transition: 0.2s all ease-in-out;
+				.overlay {
+					position: absolute;
+			    top: 0;
+			    left: 0;
+			    height: 100%;
+			    width: 100%;
+			    background-color: rgba(0, 0, 0, 0.2);
+				}
+				.title {
+					opacity: 0;
+					position: absolute;
+					bottom: 30px;
+					left: 18px;
+					padding-left: 30px;
+					padding-right: 30px;
+					font-size: 18px;
+					color: white;
+					line-height: 20px;
+					transition: 0.2s all ease-in-out;
+					@media only screen and (max-width : 768px) {
+						display: none;
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						border-bottom: 2px solid white;
+						width: 15px;
+						left: 7px;
+						top: 50%;
+					}
+				}
+				&.one {
+					top: 0;
+					left: 0;
+					width: 50%;
+					height: 100%;
+				}
+				&.two {
+					top: 0;
+					right: 0;
+					width: 25%;
+					height: 50%;
+				}
+				&.three {
+					top: 0;
+					right: 25%;
+					width: 25%;
+					height: 50%;
+				}
+				&.four {
+					top: 50%;
+					right: 0;
+					width: 50%;
+					height: 50%;
+				}
+			}
+			.work:hover {
+				.title {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

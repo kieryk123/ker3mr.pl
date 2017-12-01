@@ -1,0 +1,121 @@
+.page-ofirmie {
+	margin-top: 88px;
+	@media only screen and (max-width : 992px) {
+		margin-top: 62px;
+  }
+	.page-header {
+		background-image: url('../images/o_firmie/header-bg.jpg');
+	}
+	// sekcja about us
+	.about-us {
+		padding-top: 55px;
+		padding-bottom: 90px;
+		.section-divider-bottom {
+			margin-top: 60px;
+		}
+	}
+	// sekcja our specializations
+	.our-specializations {
+		.container-special {
+			max-width: 1070px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.arrow-list {
+			list-style: none;
+			padding-left: 5px;
+			&>li {
+				font-size: 16px;
+				padding-bottom: 30px;
+				text-indent: -1.2em;
+				margin-left: 1.2em;
+				@media only screen and (max-width: 480px) {
+					font-size: 14.5px;
+				}
+				&:before {
+					position: relative;
+					top: -1px;
+					content: '';
+					display: inline-block;
+					background-image: url('../images/list-style-arrow.png');
+					background-repeat: no-repeat;
+					height: 9px;
+					width: 6px;
+					margin-right: 12px;
+				}
+			}
+			.nested-list {
+				list-style: none;
+				list-style-position: outside;
+				&>li {
+					font-size: 12px;
+					margin-bottom: 30px;
+					text-indent: -1.2em;
+					margin-left: 1.2em;
+					&:before {
+						position: relative;
+						top: -3px;
+						content: '';
+						display: inline-block;
+						background-image: url('../images/list-style-dot.png');
+						background-repeat: no-repeat;
+						height: 2px;
+						width: 2px;
+						margin-right: 12px;
+					}
+				}
+			}
+		}
+		.photos-wrapper {
+			display: block;
+			@media only screen and (max-width: 992px) {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+			@media only screen and (max-width: 768px) {
+				display: block;
+			}
+			.photo-link {
+				display: inline-block;
+				border-right: 6px solid transparent;
+				margin-bottom: -5px;
+				transition: 0.2s all ease-in-out;
+				@media only screen and (max-width: 992px) {
+					max-width: 200px;
+				}
+				@media only screen and (max-width: 768px) {
+					display: block;
+					max-width: 350px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				@media only screen and (max-width: 480px) {
+					max-width: 230px;
+				}
+				&:hover {
+					border-color: #ff4540;
+					.photo {
+						filter: grayscale(0%);
+					}
+				}
+				.photo {
+					filter: grayscale(100%);
+					transition: 0.1s all ease-in-out;
+				}
+			}
+		}
+	}
+	.additional-info {
+		padding-top: 110px;
+		padding-bottom: 110px;
+		p {
+			&:last-of-type {
+				margin-bottom: 60px;
+			}
+		}
+		.btn-with-arrow {
+			margin-bottom: 50px;
+		}
+	}
+}

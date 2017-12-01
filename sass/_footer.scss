@@ -1,0 +1,125 @@
+footer {
+	.footer-top {
+		padding-bottom: 95px;
+		.section-title {
+			padding-left: 75px;
+			padding-right: 75px;
+			background-color: white;
+			@media only screen and (max-width: 768px) {
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+			&:before {
+				left: 25px;
+			}
+			&:after {
+				right: 25px;
+			}
+		}
+		.box-wrapper {
+			margin-top: 50px;
+			min-width: 300px;
+			.icon {
+				display: inline-block;
+				vertical-align: top;
+				padding-top: 18px;
+    		padding-right: 18px;
+				@media only screen and (max-width : 1200px) {
+					padding-right: 16px;
+    		}
+			}
+			.text {
+				display: inline-block;
+				font-size: 16px;
+				line-height: 22px;
+				vertical-align: top;
+				word-wrap: break-word;
+				h6 {
+					margin: 0;
+					font-size: 16px;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.footer-top-kontakt {
+		padding-bottom: 95px;
+		.section-title {
+			padding-left: 75px;
+			padding-right: 75px;
+			background-color: white;
+			margin-bottom: 40px;
+			@media only screen and (max-width: 768px) {
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+			&:before {
+				left: 25px;
+			}
+			&:after {
+				right: 25px;
+			}
+		}
+		.form-wrapper {
+			max-width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			@media only screen and (max-width: 480px) {
+				max-width: 85%;
+			}
+			.no-padding-left {
+				@media only screen and (max-width: 992px) {
+					padding-left: 15px;
+				}
+			}
+			.form-control {
+				border-radius: 0;
+				box-shadow: none;
+				outline: 0;
+				border-color: #d2d2d2;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			textarea {
+				height: 156px;
+			}
+			.send-message {
+				margin-top: 96px;
+				@media only screen and (max-width: 992px) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: black;
+		color: #cfcfcf;
+		font-size: 14px;
+		.logo {
+			text-align: left;
+			@media only screen and (max-width : 768px) {
+				text-align: center;
+				img {
+					margin-bottom: 40px;
+				}
+			}
+		}
+		.links {
+			text-align: right;
+			@media only screen and (max-width : 768px) {
+				text-align: center;
+			}
+			.footer-link {
+				color: #cfcfcf;
+				text-decoration: none;
+				padding-left: 3px;
+				padding-right: 3px;
+				&:hover, &:focus {
+					color: white;
+				}
+			}
+		}
+	}
+}

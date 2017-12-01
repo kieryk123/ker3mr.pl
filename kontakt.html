@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technika Aluminiowo - Szklana">
+  <meta name="keywords" content="technika, aluminiowo, szklana, ker+3mr, ker, 3mr">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="KER+3MR">
+  <meta property="og:description" content="Technika Aluminiowo - Szklana">
+  <!-- <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg"> -->
+  <!-- <meta property="og:url" content="http://euro-travel-example.com/index.htm"> -->
+  <meta property="og:site_name" content="KER+3MR">
+  <title>KER+3MR - Technika Aluminiowo - Szklana</title>
+
+  <!-- bootstrap styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate.CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+  <!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet -->
+  <link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+  <!-- main site styles -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+  <header class="navbar-fixed-top">
+    <nav class="main-nav">
+      <div class="container">
+        <div class="brand-logo pull-left">
+          <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+          <div id="hamburger" class="hamburger visible-sm visible-xs">menu</div>
+        </div>
+        <div id="hamburger-menu" class="nav-right pull-right">
+          <ul class="nav-links">
+            <li><a class="link" href="ofirmie.html">O firmie</a></li>
+            <li><a class="link dropdown-link">Oferta</a></li>
+            <li><a class="link" href="#">Nasze realizacje</a></li>
+            <li><a class="link" href="#">Kontakt</a></li>
+          </ul>
+          <div class="lang-links">
+            <a class="lang-link active" href="#">PL</a> /
+            <a class="lang-link" href="#">EN</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </nav>
+    <nav class="dropdown-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <img src="images/keller-dropdown-logo.png" alt="Keller logo">
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <div class="icon">
+                <img src="images/przeszklenia_wielkogabarytowe.png" alt="icon">
+              </div>
+              <div class="title">
+                Przeszklenia wielkogabarytowe
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <div class="icon">
+                <img src="images/fasady_szklane.png" alt="icon">
+              </div>
+              <div class="title">
+                Fasady szklane
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <div class="icon">
+                <img src="images/systemy_przeciwsloneczne.png" alt="icon">
+              </div>
+              <div class="title">
+                Systemy przeciwsłoneczne
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <div class="icon">
+                <img src="images/ogrody_zimowe.png" alt="icon">
+              </div>
+              <div class="title">
+                Ogrody zimowe
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 option-box">
+            <a href="#" class="option-link">
+              <div class="icon">
+                <img src="images/zabudowy_caloszklane.png" alt="icon">
+              </div>
+              <div class="title">
+                Zabudowy całoszklane
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+	<main class="page-kontakt">
+		<div class="page-header">
+			<div class="container">
+			  <div class="title-wrapper">
+			  	<h1 class="page-title">kontakt</h1>
+					<h2 class="page-subtitle">zadzwoń lub napisz</h2>
+			  </div>
+			</div>
+		</div>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<a class="home-link" href="#">
+					<svg version="1" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0L0 9h3v8h5v-6h4v6h5V9h3z"/></svg>
+				</a>
+				<span class="breadcrumbs-separator">&ndash;</span>
+				<a class="normal-link active" href="#">Kontakt</a>
+			</div>
+		</div>
+
+		<section class="contact-info">
+			<header class="section-header">
+				<h3 class="section-title">KER+3MR - Technika Aluminiowo-Szklana Spółka z o.o.</h3>
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div id="map" class="map-wrapper"></div>
+						<script>
+				      function initMap() {
+				        var office = {lat: 51.0774, lng: 17.2605};
+				        var map = new google.maps.Map(document.getElementById('map'), {
+				          zoom: 14,
+				          center: office,
+									disableDefaultUI: true
+				        });
+				        var marker = new google.maps.Marker({
+				          position: office,
+				          map: map
+				        });
+				      }
+				    </script>
+				    <script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK7v8jQJLkBUNTAYWMMhKOyOraxI-xJdI&callback=initMap">
+				    </script>
+					</div>
+					<div class="col-md-4 col-md-push-1">
+						<p>Adres:</p>
+						<p>55-003 Czernica <br>
+						ul. Miedziana 1, Nadolice Wielkie <br>
+						GPS N: 51,0774° E: 17,2605°<p>
+						<p><a class="mail-link" href="mailto:biuro@ker3mr.pl">biuro@ker3mr.pl</a> <br>
+						<a class="phone-link" href="tel:531 759 999">tel: 531 759 999</a> <br>
+						fax: 71 70 71 475</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team">
+			<header class="section-header">
+				<h3 class="section-title">Zespół</h3>
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/1.jpg" alt="portret">
+							<h5 class="name">Jerzy Goriaczko</h5>
+							<h6 class="title">Prezes Spółki</h6>
+							<p class="role">Dyrektor ds. Organizacji Produkcji i Montażu</p>
+							<a class="mail" href="mailto:jurek@ker3mr.pl">jurek@ker3mr.pl</a>
+							<a class="phone" href="tel:501193374">tel. kom. +48 501-193-374</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/2.jpg" alt="portret">
+							<h5 class="name">Robert Jopp</h5>
+							<h6 class="title">V-ce Prezes Spółki</h6>
+							<p class="role">Dyrektor ds. Technicznych i Marketingu</p>
+							<a class="mail" href="mailto:robert@ker3mr.pl">robert@ker3mr.pl</a>
+							<a class="phone" href="tel:507135802">tel. kom. +48 507-135-802</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/3.jpg" alt="portret">
+							<h5 class="name">Agnieszka Hebbechi</h5>
+							<p class="role special-grid">Marketing i Administracja</p>
+							<a class="mail" href="mailto:biuro@ker3mr.pl">biuro@ker3mr.pl</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/4.jpg" alt="portret">
+							<h5 class="name">Jarosław Krawczyk</h5>
+							<p class="role special-grid2">Projektant</p>
+							<a class="mail" href="mailto:jarek@ker3mr.pl">jarek@ker3mr.pl </a>
+							<a class="phone" href="tel:604638504">tel. kom. +48 604-638-504</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/5.jpg" alt="portret">
+							<h5 class="name">Krzysztof Wesołowski</h5>
+							<p class="role special-grid">Kierownik Kontraktu</p>
+							<a class="mail" href="mailto:krzysztof@ker3mr.pl">krzysztof@ker3mr.pl</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/6.jpg" alt="portret">
+							<h5 class="name">Michał Stachoń</h5>
+							<p class="role special-grid">Kierownik Kontraktu</p>
+							<a class="mail" href="mailto:michal@ker3mr.pl">michal@ker3mr.pl</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/7.jpg" alt="portret">
+							<h5 class="name">Piotr Dyderski</h5>
+							<p class="role special-grid2">Logistyka i Serwis</p>
+							<a class="mail" href="mailto:piotr.dyderski@ker3mr.pl">piotr.dyderski@ker3mr.pl</a>
+							<a class="phone" href="tel:500257959">tel. kom. +48 500-257-959</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/8.jpg" alt="portret">
+							<h5 class="name">Mateusz Jopp</h5>
+							<p class="role special-grid2">systemy przeciwsłoneczne</p>
+							<a class="mail" href="mailto:mateusz@ker3mr.pl">mateusz@ker3mr.pl</a>
+							<a class="phone" href="tel:508183609">tel. kom. +48 508-183-609</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/9.jpg" alt="portret">
+							<h5 class="name">Daniel Czyrnek</h5>
+							<p class="role special-grid">Kierownik Produkcji </p>
+							<a class="mail" href="mailto:daniel@ker3mr.pl">daniel@ker3mr.pl</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/8.jpg" alt="portret">
+							<h5 class="name">Mateusz Jopp</h5>
+							<p class="role special-grid2">systemy przeciwsłoneczne</p>
+							<a class="mail" href="mailto:mateusz@ker3mr.pl">mateusz@ker3mr.pl</a>
+							<a class="phone" href="tel:508183609">tel. kom. +48 508-183-609</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="member text-center">
+							<img class="portrait img-circle img-responsive" src="images/kontakt/8.jpg" alt="portret">
+							<h5 class="name">Mateusz Jopp</h5>
+							<p class="role special-grid2">systemy przeciwsłoneczne</p>
+							<a class="mail" href="mailto:mateusz@ker3mr.pl">mateusz@ker3mr.pl</a>
+							<a class="phone" href="tel:508183609">tel. kom. +48 508-183-609</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-top-kontakt">
+			<div class="container">
+				<header class="section-header">
+					<div class="section-divider-top"></div>
+					<h3 class="section-title">Masz pytania?</h3>
+				</header>
+				<div class="row">
+					<div class="form-wrapper">
+						<form>
+							<div class="col-md-4">
+								<div class="form-group">
+								  <input type="text" class="form-control" id="name" placeholder="Imię i nazwisko">
+								</div>
+								<div class="form-group">
+								  <input type="number" class="form-control" id="phone" placeholder="Numer telefonu">
+								</div>
+								<div class="form-group">
+								  <input type="email" class="form-control" id="mail" placeholder="Adres email">
+								</div>
+							</div>
+							<div class="col-md-4 no-padding-left">
+								<div class="form-group">
+								  <textarea id="message" class="form-control" name="message" rows="8" cols="80" placeholder="Treść wiadomości"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<a class="btn-with-arrow send-message" href="#">Wyślij</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 logo">
+						<img src="images/logo-min.png" alt="logo">
+					</div>
+					<div class="col-lg-4 col-lg-push-5 col-md-6 col-md-push-3 col-sm-6 col-sm-push-3 links">
+						<a class="footer-link" href="#">O firmie</a> / <a class="footer-link" href="#">Oferta</a> / <a class="footer-link" href="#">Nasze realizacje</a> / <a class="footer-link" href="#">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jquery scripts-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- bootstrap scripts -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- main site scripts minified -->
+	<script src="js/min/scripts.min.js"></script>
+	<!-- bootstrap touch slider -->
+	<script src="js/bootstrap-touch-slider-min.js"></script>
+	<!-- bootstrap touch slider init -->
+	<script type="text/javascript">
+			jQuery('#bootstrap-touch-slider').bsTouchSlider();
+			jQuery('#content-slider').bsTouchSlider();
+	</script>
+	<!-- parallax.js -->
+	<script src="js/parallax.min.js"></script>
+	<!-- parallax.js inits -->
+	<script type="text/javascript">
+		jQuery('.parallax').parallax({imageSrc: 'images/parallax1.jpg'});
+	</script>
+
+	</body>
+</body>
+</html>

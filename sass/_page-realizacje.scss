@@ -1,0 +1,86 @@
+.page-realizacje {
+	margin-top: 88px;
+	@media only screen and (max-width : 992px) {
+		margin-top: 62px;
+	}
+	.page-header {
+		background-image: url('../images/realizacje/header-bg.jpg');
+	}
+	.filters {
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		margin-bottom: 13px;
+		.info-text {
+			color: #c1c1c1;
+			font-size: 13px;
+			font-weight: 700;
+			margin-right: 5px;
+			text-transform: uppercase;
+		}
+		.filter {
+			position: relative;
+			padding: 15px;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 700;
+			color: #c1c1c1;
+			background-color: white;
+			border: 2px solid transparent;
+			box-shadow: none;
+			outline: none;
+			border-radius: 0;
+			margin-right: 3px;
+			@media only screen and (max-width : 992px) {
+				display: block;
+				width: 100%;
+				margin-top: 3px;
+				padding: 10px;
+			}
+			&.active {
+				color: black;
+				border-color: black;
+				&:after {
+					position: absolute;
+			    top: -9px;
+			    right: 1px;
+			    content: '\002b';
+			    font-size: 22px;
+			    font-weight: 400;
+			    transform: rotate(45deg);
+				}
+			}
+		}
+	}
+	#works {
+		margin-bottom: 90px;
+		.tile {
+			display: block;
+			width: 33.33%;
+			padding-bottom: 4px;
+			padding-left: 2px;
+			padding-right: 2px;
+			z-index: 2;
+			@media only screen and (max-width : 992px) {
+				width: 50%;
+			}
+			&.nagrodzone {
+				&:before {
+					position: absolute;
+					display: block;
+					content: '';
+					top: 6px;
+					right: 2px;
+					background-image: url(../images/realizacje/medal.png);
+					height: 32px;
+					width: 32px;
+				}
+			}
+		}
+		.tile img {
+		  max-width: 100%;
+		  height: auto;
+		  display: block;
+		  width: 100%;
+		}
+	}
+}

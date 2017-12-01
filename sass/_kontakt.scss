@@ -1,0 +1,69 @@
+.page-kontakt {
+	margin-top: 88px;
+	@media only screen and (max-width : 992px) {
+		margin-top: 62px;
+	}
+	.page-header {
+		background-image: url('../images/kontakt/header-bg.jpg');
+	}
+	.contact-info {
+		padding-bottom: 100px;
+		.map-wrapper {
+			min-height: 360px;
+		}
+		p:first-of-type {
+			margin-top: 30px;
+		}
+		.mail-link, .phone-link {
+			color: black;
+			font-weight: 700;
+		}
+	}
+	.team {
+		padding-bottom: 50px;
+		.member {
+			max-width: 180px;
+			min-height: 354px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 70px;
+			.portrait {
+				margin-bottom: 20px;
+				transition: 0.2s all ease-in-out;
+				filter: grayscale(100%);
+				&:hover {
+					filter: grayscale(0%);
+				}
+			}
+			.name {
+				font-size: 16px;
+				font-weight: 700;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.title {
+				font-size: 16px;
+				font-weight: 700;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.role {
+				font-size: 14px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				&.special-grid {
+					margin-top: 48px;
+    			margin-bottom: 48px;
+				}
+				&.special-grid2 {
+					margin-top: 38px;
+    			margin-bottom: 39px;
+				}
+			}
+			.mail, .phone {
+				display: block;
+				color: black;
+			}
+		}
+	}
+}

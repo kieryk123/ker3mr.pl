@@ -1,0 +1,33 @@
+.page-oferta {
+	margin-top: 88px;
+	@media only screen and (max-width : 992px) {
+		margin-top: 62px;
+  }
+	.page-header {
+		background-image: url('../images/oferta/header-bg.jpg');
+	}
+	.section-divider-bottom {
+		margin-top: 80px;
+	}
+	.offer-item {
+		margin-bottom: 170px;
+		.item-wrapper {
+			max-width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+			.image-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@media only screen and (max-width : 992px) {
+					margin-bottom: 50px;
+			  }
+			}
+			.description-wrapper {
+				text-align: justify;
+				margin-bottom: 20px;
+				overflow: auto;
+			}
+		}
+	}
+}
